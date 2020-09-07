@@ -37,47 +37,36 @@
 \end{titlepage}
 
 \tableofcontents
-
+\newpage
 \section{Introducción} \label{Introducción}
 La idea de este documento es resolver de una vez por todas el verdadero significado de la memoria del computador, ya que es común que muchos de nosotros solo lo relacionemos con el disco duro y la memoria RAM instalada en la placa madre, también, entender como se gestiona, cuales son algunos de sus tipos y definiciones de cada uno.
 
-
-\section{Contenido} \label{Contenido}
-
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
-
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
-
-
-
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
 \section{La Memoria del computador}
 \subsection{¿Qué es la memoria del computador?}
-La memoria es un componente esencial en los computadores, es la herramienta que me permite sacar información del disco duro con alta velocidad de acceso, almacenarla temporalmente y así facilitar el procesamiento de datos e instrucciones que ejecuta la CPU y una vez que estas fueron concretadas regresa la información obtenida a el disco duro reemplazando los archivos que fueron extraídos.
+La memoria es un componente esencial en los computadores, es la herramienta que me permite sacar información del disco duro con alta velocidad de acceso, almacenarla temporalmente y así facilitar el procesamiento de datos e instrucciones que ejecuta la CPU y una vez que estas fueron concretadas regresa la información obtenida a el disco duro reemplazando los archivos que fueron extraídos. Esta información fue obtenida en el documento de augusto \cite{Referencia}
 \subsection{Tipos de memoria}
+Información consultada en    Tecnologia-Informatica.com\cite{TecnologiaInformatica}
 \subsubsection{Memoria ROM:}
 Esta memoria se encuentra ubicada en la motherboard, Cuando la computadora se enciende esta se encarga de leer la primera instrucción que hace un chequeo de todos los componentes, posteriormente se carga en esta misma la BIOS que da información sobre los periféricos conectados y sobre que disco duro contiene el sistema operativo. Garantiza que mantendrá los datos que contiene encendida o apagada.
+Puede mirar su ilustración en la siguiente imagen(\ref{fig:ROM})
+
+\begin{figure}[h]
+\includegraphics[width=4cm]{ROM.png}
+\centering
+\caption{Memoria ROM}
+\label{fig:ROM}
+\end{figure}
 \subsubsection{Memoria Virtual o de SWAMP:}
 Esta es la porción de disco duro dedicada exclusivamente a almacenar temporalmente datos de programas y datos de ejecución que se utilizan menos o que ocupan espacio innecesario y así optimizar el almacenamiento de la memoria RAM. Está puede generar problemas al superar su capacidad de almacenamiento.
 \subsubsection{Memoria RAM:}
 Es aquella memoria a la que accede la CPU para procesar y buscar los datos que se estén usando en el momento y almacenarlos temporalmente y una vez terminada la tarea o cuando pierde su flujo de corriente los datos se pierden.
 \subsubsection{Memoria DRAM:}
-Es una RAM dinámica de acceso aleatorio que necesita un circuito dinámico de refresco cada cierto tiempo para mantener su funcionalidad, su principal ventaja es el precio y la gran cantidad de posiciones de memoria que puede tener.En la siguiente imagen puede ver una ilustración de una memoria de este estilo. Figura
-(\ref{fig:RAMM})
+Es una RAM dinámica de acceso aleatorio que necesita un circuito dinámico de refresco cada cierto tiempo para mantener su funcionalidad, su principal ventaja es el precio y la gran cantidad de posiciones de memoria que puede tener.En la siguiente imagen puede ver una ilustración de una memoria de este estilo. Figura(\ref{fig:RAMM})
+
 \begin{figure}[h]
 \includegraphics[width=4cm]{RAMM.png}
 \centering
-\caption{Memoria DRAM}
+\caption{Memoria DRAM Convencional}
 \label{fig:RAMM}
 \end{figure}
 
@@ -87,14 +76,17 @@ Es una RAM que se caracteriza por ser muy rápida, se empezó a utilizar porque 
 Este tipo de memoria RAM basada en semiconductores capaz de mantener la información sin necesidad de circuito de refresco, Un ejemplo de esta es la memoria cache que se encuentra en los microprocesadores.
 \subsection{¿Como se gestiona la memoria en un computador?}
 Hay un administrador encargado de mantener el control y la forma en que se le asignan espacios en las diferentes memorias, a los procesos y datos. Este gestiona la memoria llevando un registro de las partes de la memoria que se están utilizando y aquellas que no, Asignando espacio en la memoria para los procesos cuando estos los necesitan y Liberando espacio de la memoria asignada a procesos que han terminado. 
-\subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué es importante?}
-Los factores que influyen en que una memoria
-
-En la sección de teoremas (\ref{Contenido})
+\subsection{¿Qué hace que una memoria sea más rápida que otra?}
+Los factores que influyen en que una memoria sea mas rápida que otra son los siguientes:
+-Las frecuencias(Mhz) Esta indica la velocidad de reloj con la que trabaja la memoria.
+-La latencia es el tiempo que se demora la memoria en hacer una operación.
+Para saber cual memoria es mas rápida comparándola con otra, tenemos que fijarnos en que entre mayor sea la frecuencia y menor la latencia tendremos una memoria mas óptima, que hara sus procesos mas rápido.
+\subsubsection{¿Por qué es importante?}
+La importancia de esta se ve reflejada en los programas que son demasiado exigentes, ya que estos necesitan ejecutar muchas operaciones en el menor tiempo posible. Algunos ejemplos son los videojuegos. Estos sin las memorias adecuadas sufrirán los llamados "pegones o sttutering" que hace que la experiencia sea poco agradable. Otro punto importante es que cuando la memoria tiene buena frecuencia y poca latencia, todos mis programas funcionaran de una manera mas fluida, incluyendo el sistema operativo.
+información adquirida en Hardzone.es\cite{hardzone}
 
 \section{Conclusión} \label{Conclusión}
 Sin duda alguna, todos los procesos y todo lo que hacemos en la cotidianidad en nuestros computadores seria imposible sin los diferentes tipos de memoria. Gracias a la memoria cache por su gran velocidad que es capaz de sacarle el potencial a nuestro procesador y a la memoria DRAM (en este caso las que se encuentran instaladas en los slots de la placa madre) que tiene una gran capacidad de espacio y es económica, con la ayuda de estas 2 y el disco duro de almacenamiento podemos procesar datos a una gran velocidad.
-
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
