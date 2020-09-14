@@ -39,7 +39,7 @@
 \tableofcontents
 \newpage
 \section{Introducción} \label{Introducción}
-La idea de este documento es resolver de una vez por todas el verdadero significado de la memoria del computador, ya que es común que muchos de nosotros solo lo relacionemos con el disco duro y la memoria RAM instalada en la placa madre, también, entender como se gestiona, cuales son algunos de sus tipos y definiciones de cada uno.
+La idea de este documento es resolver de una vez por todas el verdadero significado de la memoria del computador, ya que es común que muchos de nosotros solo lo relacionemos con el disco duro y la memoria RAM instalada en la placa madre, también, entender como se gestiona, cuales son algunos de sus tipos y definiciones de algunas de ellas.
 
 \section{La Memoria del computador}
 \subsection{¿Qué es la memoria del computador?}
@@ -47,8 +47,8 @@ La memoria es un componente esencial en los computadores, es la herramienta que 
 \subsection{Tipos de memoria}
 Información consultada en    Tecnologia-Informatica.com\cite{TecnologiaInformatica}
 \subsubsection{Memoria ROM:}
-Esta memoria se encuentra ubicada en la motherboard, Cuando la computadora se enciende esta se encarga de leer la primera instrucción que hace un chequeo de todos los componentes, posteriormente se carga en esta misma la BIOS que da información sobre los periféricos conectados y sobre que disco duro contiene el sistema operativo. Garantiza que mantendrá los datos que contiene encendida o apagada.
-Puede mirar su ilustración en la siguiente imagen(\ref{fig:ROM})
+Esta memoria se encuentra ubicada en la placa madre, Cuando la computadora se enciende esta se encarga de leer la primera instrucción que hace un chequeo de todos los componentes, posteriormente se carga en esta misma la BIOS que da información sobre los periféricos conectados y sobre que disco duro contiene el sistema operativo. Garantiza que mantendrá los datos que contiene encendida o apagada.
+Puede mirar su ilustración en la siguiente imagen(\ref{fig:ROM}) Imagen  extraída de https://www.profesionalreview.com
 
 \begin{figure}[h]
 \includegraphics[width=4cm]{ROM.png}
@@ -59,9 +59,9 @@ Puede mirar su ilustración en la siguiente imagen(\ref{fig:ROM})
 \subsubsection{Memoria Virtual o de SWAMP:}
 Esta es la porción de disco duro dedicada exclusivamente a almacenar temporalmente datos de programas y datos de ejecución que se utilizan menos o que ocupan espacio innecesario y así optimizar el almacenamiento de la memoria RAM. Está puede generar problemas al superar su capacidad de almacenamiento.
 \subsubsection{Memoria RAM:}
-Es aquella memoria a la que accede la CPU para procesar y buscar los datos que se estén usando en el momento y almacenarlos temporalmente y una vez terminada la tarea o cuando pierde su flujo de corriente los datos se pierden.
+Es aquella memoria a la que accede la CPU para procesar y buscar los datos que se estén usando en el momento y almacenarlos temporalmente. Los datos de esta son eliminados al terminar de procesar una tarea o al perder su flujo de corriente.
 \subsubsection{Memoria DRAM:}
-Es una RAM dinámica de acceso aleatorio que necesita un circuito dinámico de refresco cada cierto tiempo para mantener su funcionalidad, su principal ventaja es el precio y la gran cantidad de posiciones de memoria que puede tener.En la siguiente imagen puede ver una ilustración de una memoria de este estilo. Figura(\ref{fig:RAMM})
+Es una RAM dinámica de acceso aleatorio que necesita un circuito dinámico de refresco cada cierto tiempo para mantener su funcionalidad, su principal ventaja es el precio y la gran cantidad de posiciones de memoria que puede tener.En la siguiente imagen puede ver una ilustración de una memoria de este estilo. Figura(\ref{fig:RAMM}) Imgagen extraida de https://www.freepng.es
 
 \begin{figure}[h]
 \includegraphics[width=4cm]{RAMM.png}
@@ -71,7 +71,7 @@ Es una RAM dinámica de acceso aleatorio que necesita un circuito dinámico de r
 \end{figure}
 
 \subsubsection{Memoria cache:}
-Es una RAM que se caracteriza por ser muy rápida, se empezó a utilizar porque las memorias RAM convencionales ya no eran capaces de acompañar a la velocidad del procesador, haciendo que este se quedara esperando los datos que debía entregar la memoria RAM convencional,no requiere de circuito dinámico de refresco, su desventaja es su precio y capacidad de almacenamiento.
+Es una memoria RAM que se caracteriza por ser muy rápida, se empezó a utilizar porque las memorias RAM convencionales (DRAM) ya no eran capaces de acompañar a la velocidad del procesador, haciendo que este se quedara esperando los datos que debía entregar la memoria RAM convencional,no requiere de circuito dinámico de refresco, su desventaja es su precio y capacidad de almacenamiento.
 \subsubsection{SRAM:}
 Este tipo de memoria RAM basada en semiconductores capaz de mantener la información sin necesidad de circuito de refresco, Un ejemplo de esta es la memoria cache que se encuentra en los microprocesadores.
 \subsection{¿Como se gestiona la memoria en un computador?}
